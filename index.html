@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>回调函数</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		function main(callBack){
+			callBack();
+			console.log("主函数");
+		}
+		function callBack(){
+			setTimeout(() => {console.log('回调函数')}, 2000);
+		}
+	</script>
+</body>
+</html>
